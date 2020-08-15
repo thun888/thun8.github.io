@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>gh下载加速</title>
+        <script>
+        function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight)+"px";
+}
+
+        function onload() {
+    auto_grow(document.getElementById("come"));
+}
+
+        function getit() {
+    username = document.getElementById("username").value;
+    repo = document.getElementById("repo").value;
+    name = document.getElementById("name").value;
+    version = document.getElementById("version").value;
+    if (username.length==0 || repo.length==0 || name.length==0 || version.length==0 )
+        return;
+    come = `https://cdn.jsdelivr.net/gh/${username}/${repo}@${version}/${name}`;
+    document.getElementById("come").value = come;
+    auto_grow(document.getElementById("come"));
+}
+    </script>
+    </head>
+
+<body>
+    <h3>GitHub下载链接加速</h3>
+    <div class="1" >
+        <form action="javascript:void(0);" autocomplete="off">
+        <article>
+            <div class="1">
+            <lable for="username">用户名</lable><br>
+            <input type="text" id="username" class="form-control" placeholder="thun888" required="">
+    </div>
+    <div class="1">
+        <lable for="repo">仓库名</lable><br>
+        <input type="text" id="repo" class="form-control" placeholder="tuku" required="">
+    </div>
+    <div class="1">
+        <lable for="name">文件名</lable><br>
+        <input type="text" id="name" class="form-control" placeholder="0a0c3e36ebda7de6860eb0bd77edbd03.jpg" required="">
+    </div>
+    <div class="1">
+        <lable for="version">分支(默认master)</lable><br>
+        <input type="text" id="version" class="form-control" placeholder="master" value="master" required="">
+    </div>
+</article>
+    <article>
+    <input type="submit" value="合成" class="getit" onclick="getit()">
+    
+</article>
+</form>
+</div>
+<div class="2">
+<article><textarea id="come" onchange="auto_grow(this)" oninput="auto_grow(this)" placeholder="https://cdn.jsdelivr.net/gh/thun888/tuku/0a0c3e36ebda7de6860eb0bd77edbd03.jpg" style="resize:none; width: 225px; height: 100px"></textarea><br></article>
+</div>
+<script language="javascript">
+ function down()
+{
+        window.open(document.getElementById("come").value); //innerhtml表示标签例bai里东西du,因为hello一直zhi没有变dao,,所以用value
+    
+ }
+    </script>
+<input type="button" onclick="down()" value="下载(请合成后点击)"/>
+<!--不会有人看到吧，不会吧不会吧-->
+<h5>由<a href="https://www.jsdelivr.com/">jsdelivr</a>提供<a href="https://baike.baidu.com/item/CDN/420951">CDN</a>加速</h5>
+<style>
+    body{text-align:center}
+</style>
+</body>
+</html>
