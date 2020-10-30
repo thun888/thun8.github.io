@@ -8,7 +8,7 @@
     <link href="/2020/10/30/%E5%BC%B9%E5%87%BAC%E7%9B%98%E3%81%AE%E5%BF%AB%E4%B9%90/"/>
     <url>/2020/10/30/%E5%BC%B9%E5%87%BAC%E7%9B%98%E3%81%AE%E5%BF%AB%E4%B9%90/</url>
     
-    <content type="html"><![CDATA[<p>想必大家都有想过：如果在电脑运行的时候弹出C盘，会发生什么呢？</p><p>我们需要用到一条命令</p><pre><code class="hljs dos">mountvol c: /d</code></pre><p>这里用windows沙盒来演示</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd.png"></p><p>（还不知道要经历悲剧的沙盒)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd030223651.png"></p><p>win+r打开cmd</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224031.png"></p><p>把指令输进去（危）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224416.png"></p><p>按回车</p><video src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/dzasda1030224545.mp4" controls="controls">您的浏览器不支持 video 标签。</video><p>直 接 白 给</p><p>[^不推荐在实体机上试]: </p>]]></content>
+    <content type="html"><![CDATA[<p>想必大家都有想过：如果在电脑运行的时候弹出C盘，会发生什么呢？</p><p>我们需要用到一条命令</p><pre><code class="hljs dos">mountvol c: /d</code></pre><p>这里用windows沙盒来演示</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd.png"></p><p>（还不知道要经历悲剧的沙盒)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd030223651.png"></p><p>win+r打开cmd</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224031.png"></p><p>把指令输进去（危）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224416.png"></p><p>按回车</p><iframe src="//player.bilibili.com/player.html?aid=970026140&bvid=BV1Np4y1k7QW&cid=251045938&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>直 接 白 给</p><p>不推荐在实体机上试！</p>]]></content>
     
     
     
