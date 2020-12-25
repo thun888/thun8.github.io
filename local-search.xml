@@ -8,9 +8,15 @@
     <link href="/2020/12/25/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/"/>
     <url>/2020/12/25/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>一天，我像往常一样更新，但却哪里不对劲</p><ul><li><p>背景</p><p>一天，我像往常一样更新，但却哪里不对劲</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185519095.png" alt="image-20201225185519095"></p><p>输过账号密码后就闪退了，但还是有办法的</p><ul><li><p>The way</p><p>先装上GitHub Desktop</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185853225.png" alt="image-20201225185853225"></p></li></ul><p>把仓库fork到本地</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185950616.png" alt="image-20201225185950616"></p><p>记下这个文件夹的名字和路径后删了它<br>来到你hexo部署的文件夹里找到<code>.deploy_git</code>文件夹</p><p>复制路径</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225190647497.png" alt="image-20201225190647497"></p><p>打开cmd</p><p>输入<code>mklink /d &quot;先前fork下来的仓库的路径&quot; &quot;刚刚hexo部署的路径&quot;</code></p><p>eg：<code>mklink /d &quot;f:/thun888.github.io&quot; &quot;G:\BLOG\.deploy_git&quot;</code></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191032334.png" alt="image-20201225191032161"></p><p>这时候再打开GitHub Desktop同步文件即可</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191125949.png" alt="image-20201225191125949"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><p>背景</p><p>一天，我像往常一样更新，但却哪里不对劲</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185519095.png" alt="image-20201225185519095"></p><p>输过账号密码后就闪退了，但还是有办法的</p><ul><li><p>The way</p><p>先装上GitHub Desktop</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185853225.png" alt="image-20201225185853225"></p></li></ul><p>把仓库fork到本地</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185950616.png" alt="image-20201225185950616"></p><p>记下这个文件夹的名字和路径后删了它<br>来到你hexo部署的文件夹里找到<code>.deploy_git</code>文件夹</p><p>复制路径</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225190647497.png" alt="image-20201225190647497"></p><p>打开cmd</p><p>输入<code>mklink /d &quot;先前fork下来的仓库的路径&quot; &quot;刚刚hexo部署的路径&quot;</code></p><p>eg：<code>mklink /d &quot;f:/thun888.github.io&quot; &quot;G:\BLOG\.deploy_git&quot;</code></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191032334.png" alt="image-20201225191032161"></p><p>这时候再打开GitHub Desktop同步文件即可</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191125949.png" alt="image-20201225191125949"></p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>cmd命令</tag>
+      
+    </tags>
     
   </entry>
   
