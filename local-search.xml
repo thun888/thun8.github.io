@@ -4,11 +4,81 @@
   
   
   <entry>
+    <title>hexo更新pages出错应急方法</title>
+    <link href="/2020/12/25/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/"/>
+    <url>/2020/12/25/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>一天，我像往常一样更新，但却哪里不对劲</p><ul><li><p>背景</p><p>一天，我像往常一样更新，但却哪里不对劲</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185519095.png" alt="image-20201225185519095"></p><p>输过账号密码后就闪退了，但还是有办法的</p><ul><li><p>The way</p><p>先装上GitHub Desktop</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185853225.png" alt="image-20201225185853225"></p></li></ul><p>把仓库fork到本地</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185950616.png" alt="image-20201225185950616"></p><p>记下这个文件夹的名字和路径后删了它<br>来到你hexo部署的文件夹里找到<code>.deploy_git</code>文件夹</p><p>复制路径</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225190647497.png" alt="image-20201225190647497"></p><p>打开cmd</p><p>输入<code>mklink /d &quot;先前fork下来的仓库的路径&quot; &quot;刚刚hexo部署的路径&quot;</code></p><p>eg：<code>mklink /d &quot;f:/thun888.github.io&quot; &quot;G:\BLOG\.deploy_git&quot;</code></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191032334.png" alt="image-20201225191032161"></p><p>这时候再打开GitHub Desktop同步文件即可</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191125949.png" alt="image-20201225191125949"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>用Batocera搭建属于你的游戏天地</title>
+    <link href="/2020/11/14/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/"/>
+    <url>/2020/11/14/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。</p><p>为了使用它，首先我们需要以下物品</p><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul><li>手和脑子</li><li>U盘（最好3.0，不过2.0也能运行）</li><li>电脑</li><li>balenaEtcher（选用）（安装方法一）</li><li>Ventoy（选用）（安装方法二）</li></ul><h4 id="安装方法一"><a href="#安装方法一" class="headerlink" title="安装方法一"></a>安装方法一</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong></p><p>安装好balenaEtcher</p><p>打开来是这个样子</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114175521447.png" alt="image-20201114175521447"></p><p>下载好<a href="https://batocera.org/">batocera</a>（它的服务器对国内挺不友好，可以从<a href="https://pan.miaoent.com/#/s/JOUo">这里</a>下载）</p><p>点击flash from file,选择刚刚下载好的镜像</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114175955744.png" alt="image-20201114175955744"></p><p>点击 Select target,选择你准备好的U盘</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180210307.png" alt="image-20201114180210307"></p><p><strong>确认选择无误</strong>后点击 Flash！ 即可完成</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114190128591.png" alt="image-20201114190128591"></p><h4 id="安装方法二"><a href="#安装方法二" class="headerlink" title="安装方法二"></a>安装方法二</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong>（但相比第一种还可以用来存文件~)</p><p>下载<a href="https://www.ventoy.net/cn/index.html">ventoy</a>解压后点Ventoy2Disk.exe运行</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180544409.png" alt="image-20201114180544409"></p><p>next，</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180821706.png" alt="image-20201114180821706"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180853314.png" alt="image-20201114180853314"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180937948.png" alt="image-20201114180937948"></p><p>然后将刚刚下载后的镜像复制进U盘里（最大的那个分区）即可</p><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="后记："><a href="#后记：" class="headerlink" title="后记："></a>后记：</h4><ul><li>在一些电脑上要按F12选择从U盘启动</li><li>它将全部机能分配在游戏运行上，相比模拟器性能好许多，对老电脑友好</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>监控站</title>
+    <link href="/2020/10/31/%E7%9B%91%E6%8E%A7%E7%AB%99/"/>
+    <url>/2020/10/31/%E7%9B%91%E6%8E%A7%E7%AB%99/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>主要是为了在学校方便~</p><ul><li>主 <a href="https://server.thun888.xyz/">https://server.thun888.xyz/</a></li><li>附 <a href="http://server-9g1wx3kb731de358-1302025169.tcloudbaseapp.com/">http://server-9g1wx3kb731de358-1302025169.tcloudbaseapp.com/</a></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>网站</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>手把手做一个定时关机的脚本</title>
+    <link href="/2020/10/31/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA%E7%9A%84%E8%84%9A%E6%9C%AC/"/>
+    <url>/2020/10/31/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA%E7%9A%84%E8%84%9A%E6%9C%AC/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Shutdown"><a href="#Shutdown" class="headerlink" title="Shutdown"></a>Shutdown</h2><p>首先祭出主角</p><pre><code class="hljs autoit"><span class="hljs-built_in">Shutdown</span></code></pre><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031094718.png"></p><p>假设我们要在60秒后关机，只需输</p><pre><code class="hljs angelscript">Shutdown -s -t <span class="hljs-number">60</span></code></pre><p>但这还不够，这样每次都要输一次指令，所以可以这样</p><h2 id="食用"><a href="#食用" class="headerlink" title="食用"></a>食用</h2><ul><li>再桌面右键—新建—文本文档</li></ul><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201031095122093.png" alt="image-20201031095122093"></p><p>名称随意</p><ul><li>打开这个新建的文本文档，复制以下内容</li></ul><pre><code class="hljs dos">@<span class="hljs-built_in">echo</span> off<span class="hljs-built_in">set</span> /P <span class="hljs-built_in">time</span>=多少秒后关机 shutdown -s -t <span class="hljs-variable">%time%</span></code></pre><p>保存为.bat/.cmd后缀名(因为有中文所以还要把编码改为ANSI)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031095819.png"></p><p>运行效果</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031100207.png"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201031100248613.png" alt="image-20201031100248613"></p><ul><li>但这还不够，都做到这个地步了，平时倒计时都是以分钟为单位，还输秒怎么能行？/滑稽</li></ul><p>再改一下</p><pre><code class="hljs livecodeserver">@echo off<span class="hljs-built_in">set</span> /P <span class="hljs-built_in">min</span>=多少分后关机 <span class="hljs-built_in">set</span> /<span class="hljs-keyword">a</span> <span class="hljs-built_in">time</span> = %<span class="hljs-built_in">min</span>%*<span class="hljs-number">60</span>shutdown -s -t %<span class="hljs-built_in">time</span>%</code></pre><p>效果</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031100717.png"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031100735.png"></p><p>ps：可以用</p><pre><code class="hljs arduino"><span class="hljs-built_in">shutdown</span> -a</code></pre><p>来取消</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>cmd命令</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>弹出C盘の快乐</title>
     <link href="/2020/10/30/%E5%BC%B9%E5%87%BAC%E7%9B%98%E3%81%AE%E5%BF%AB%E4%B9%90/"/>
     <url>/2020/10/30/%E5%BC%B9%E5%87%BAC%E7%9B%98%E3%81%AE%E5%BF%AB%E4%B9%90/</url>
     
-    <content type="html"><![CDATA[<p>想必大家都有想过：如果在电脑运行的时候弹出C盘，会发生什么呢？</p><p>我们需要用到一条命令</p><pre><code class="hljs dos">mountvol c: /d</code></pre><p>这里用windows沙盒来演示</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd.png"></p><p>（还不知道要经历悲剧的沙盒)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd030223651.png"></p><p>win+r打开cmd</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224031.png"></p><p>把指令输进去（危）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224416.png"></p><p>按回车</p><iframe src="//player.bilibili.com/player.html?aid=970026140&bvid=BV1Np4y1k7QW&cid=251045938&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>直 接 白 给</p><p>不推荐在实体机上试！</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>想必大家都有想过：如果在电脑运行的时候弹出C盘，会发生什么呢？</p><p>我们需要用到一条命令</p><pre><code class="hljs dos">mountvol c: /d</code></pre><p>这里用windows沙盒来演示</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd.png"></p><p>（还不知道要经历悲剧的沙盒)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd030223651.png"></p><p>win+r打开cmd</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224031.png"></p><p>把指令输进去（危）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224416.png"></p><p>按回车</p><iframe src="//player.bilibili.com/player.html?aid=970026140&bvid=BV1Np4y1k7QW&cid=251045938&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>直 接 白 给</p><p>不推荐在实体机上试！</p>]]></content>
     
     
     
@@ -27,7 +97,7 @@
     <link href="/2020/09/30/%E9%AA%9A%E5%95%8A/"/>
     <url>/2020/09/30/%E9%AA%9A%E5%95%8A/</url>
     
-    <content type="html"><![CDATA[<p><img src="http://pic.thun888.vaiwan.com/2020/09/30/1f611069aab54.png"></p><p><img src="http://pic.thun888.vaiwan.com/2020/09/30/4ecfefd8ff1ac.jpg"></p><p><img src="http://pic.thun888.vaiwan.com/2020/09/30/d462f8eb0c5b1.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="http://pic.thun888.vaiwan.com/2020/09/30/1f611069aab54.png"></p><p><img src="http://pic.thun888.vaiwan.com/2020/09/30/4ecfefd8ff1ac.jpg"></p><p><img src="http://pic.thun888.vaiwan.com/2020/09/30/d462f8eb0c5b1.jpg"></p>]]></content>
     
     
     
@@ -40,7 +110,7 @@
     <link href="/2020/08/29/Free%20Minecraft%20Dungeons/"/>
     <url>/2020/08/29/Free%20Minecraft%20Dungeons/</url>
     
-    <content type="html"><![CDATA[<p>新版：<a href="https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing">https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing</a></p><p>新旧版之间无法联机</p><hr><p>游戏本体及汉化文件：onedrive </p><pre><code class="hljs awk">http:<span class="hljs-regexp">//</span>share.thun888.xyz<span class="hljs-regexp">/GAMES/</span>Minecraft%<span class="hljs-number">20</span>Dungeons/</code></pre><p>Gd </p><pre><code class="hljs apache"><span class="hljs-attribute">https</span>://drive.google.com/u/<span class="hljs-number">0</span>/uc?export=download&amp;confirm=Kjoc&amp;id=<span class="hljs-number">1</span>AMtcsREk<span class="hljs-number">0</span>C<span class="hljs-number">1</span>X<span class="hljs-number">3</span>OiR<span class="hljs-number">2</span>wq<span class="hljs-number">03</span>nFQSTjsEQtv</code></pre><p>Bd </p><pre><code class="hljs apache"><span class="hljs-attribute">https</span>://pan.baidu.com/s/<span class="hljs-number">1</span>POxhNB<span class="hljs-number">5</span>ioFMv<span class="hljs-number">9</span>u<span class="hljs-number">0</span>mEbIINA</code></pre><p> 提取码：2333</p><p>（汉化文件来自mcbbs，原帖：<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1018057%EF%BC%89">https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1018057）</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>新版：<a href="https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing">https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing</a></p><p>新旧版之间无法联机</p><hr><p>游戏本体及汉化文件：onedrive </p><pre><code class="hljs awk">http:<span class="hljs-regexp">//</span>share.thun888.xyz<span class="hljs-regexp">/GAMES/</span>Minecraft%<span class="hljs-number">20</span>Dungeons/</code></pre><p>Gd </p><pre><code class="hljs apache"><span class="hljs-attribute">https</span>://drive.google.com/u/<span class="hljs-number">0</span>/uc?export=download&amp;confirm=Kjoc&amp;id=<span class="hljs-number">1</span>AMtcsREk<span class="hljs-number">0</span>C<span class="hljs-number">1</span>X<span class="hljs-number">3</span>OiR<span class="hljs-number">2</span>wq<span class="hljs-number">03</span>nFQSTjsEQtv</code></pre><p>Bd </p><pre><code class="hljs apache"><span class="hljs-attribute">https</span>://pan.baidu.com/s/<span class="hljs-number">1</span>POxhNB<span class="hljs-number">5</span>ioFMv<span class="hljs-number">9</span>u<span class="hljs-number">0</span>mEbIINA</code></pre><p> 提取码：2333</p><p>（汉化文件来自mcbbs，原帖：<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1018057%EF%BC%89">https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1018057）</a></p>]]></content>
     
     
     
@@ -59,7 +129,7 @@
     <link href="/2020/08/22/%E6%9D%A5%E5%9C%A8MC%E9%87%8C%E7%8E%A9%E7%94%B5%E8%84%91/"/>
     <url>/2020/08/22/%E6%9D%A5%E5%9C%A8MC%E9%87%8C%E7%8E%A9%E7%94%B5%E8%84%91/</url>
     
-    <content type="html"><![CDATA[<p>开学了，没时间写文字版了，看视频吧[doge]</p><iframe src="//player.bilibili.com/player.html?aid=371716567&bvid=BV1CZ4y1M7pM&cid=223846699&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a href="https://www.bilibili.com/video/BV1CZ4y1M7pM">https://www.bilibili.com/video/BV1CZ4y1M7pM</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>开学了，没时间写文字版了，看视频吧[doge]</p><iframe src="//player.bilibili.com/player.html?aid=371716567&bvid=BV1CZ4y1M7pM&cid=223846699&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a href="https://www.bilibili.com/video/BV1CZ4y1M7pM">https://www.bilibili.com/video/BV1CZ4y1M7pM</a></p>]]></content>
     
     
     
@@ -78,7 +148,7 @@
     <link href="/2020/08/12/%E7%8E%B0%E5%B7%B2%E9%80%9A%E8%BF%87myssl%E8%AE%A4%E8%AF%81/"/>
     <url>/2020/08/12/%E7%8E%B0%E5%B7%B2%E9%80%9A%E8%BF%87myssl%E8%AE%A4%E8%AF%81/</url>
     
-    <content type="html"><![CDATA[<p>awa</p><div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=thun888.xyz','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center"><img src="https://sealres.myssl.com/seal/img/1x/seal.png?domain=thun888.xyz" alt="MySSL 安全签章" style="width: 100px; height: auto; cursor: pointer"></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>awa</p><div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=thun888.xyz','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center"><img src="https://sealres.myssl.com/seal/img/1x/seal.png?domain=thun888.xyz" alt="MySSL 安全签章" style="width: 100px; height: auto; cursor: pointer"></div>]]></content>
     
     
     
@@ -87,6 +157,19 @@
       <tag>ssl认证</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>杂物</title>
+    <link href="/1999/11/29/%E6%9D%82%E7%89%A9/"/>
+    <url>/1999/11/29/%E6%9D%82%E7%89%A9/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="af415e486f47d406"><a href="#af415e486f47d406" class="headerlink" title="af415e486f47d406"></a>af415e486f47d406</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://devtest.qiniudn.com/若能绽放光芒.mp4","pic":"http://devtest.qiniudn.com/若能绽放光芒.png"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    
+    
     
   </entry>
   

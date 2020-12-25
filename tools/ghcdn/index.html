@@ -1,5 +1,50 @@
+<!doctype html>
 <html>
-    <head>
+<head>
+<meta charset="utf-8">
+<title>GitHub下载链接加速</title>
+<link href="css.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://thun888.xyz/img/favicon.ico" type="image/x-icon">
+<script src="https://server-9g1wx3kb731de358-1302025169.tcloudbaseapp.com/js/jquery-3.4.1.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="scrollspy.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+});
+</script>
+</head>
+<body data-spy="scroll">
+<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:50px;z-index:7;" data-top="background:rgba(33, 33, 33, 1.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_CssMenu1" style="position:absolute;left:610px;top:5px;width:339px;height:40px;z-index:0;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="https://thun888.xyz/" target="_self">BLOG</a>
+</li>
+</ul>
+</div>
+<div id="wb_CssMenu2" style="position:absolute;left:398px;top:5px;width:212px;height:41px;z-index:1;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#top" target="_self">GitHub&#19979;&#36733;&#38142;&#25509;&#21152;&#36895;</a>
+</li>
+</ul>
+</div>
+<div id="wb_CssMenu3" style="position:absolute;left:0px;top:5px;width:212px;height:41px;z-index:2;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self" onClick="javascript:history.back(-1);">&lt;BACK</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- cdn -->
+<div id="Html1" style="position:absolute;right:0px;left:0px;top:132px;z-index:5">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>gh下载加速</title>
         <script>
@@ -24,10 +69,6 @@
     auto_grow(document.getElementById("come"));
 }
     </script>
-    </head>
-
-<body>
-    <h3>GitHub下载链接加速</h3>
     <div class="1" >
         <form action="javascript:void(0);" autocomplete="off">
         <article>
@@ -41,7 +82,7 @@
     </div>
     <div class="1">
         <lable for="name">文件名</lable><br>
-        <input type="text" id="name" class="form-control" placeholder="0a0c3e36ebda7de6860eb0bd77edbd03.jpg" required="">
+        <input type="text" id="name" class="form-control" placeholder="0a.jpg" required="">
     </div>
     <div class="1">
         <lable for="version">分支(默认master)</lable><br>
@@ -55,7 +96,7 @@
 </form>
 </div>
 <div class="2">
-<article><textarea id="come" onchange="auto_grow(this)" oninput="auto_grow(this)" placeholder="https://cdn.jsdelivr.net/gh/thun888/tuku/0a0c3e36ebda7de6860eb0bd77edbd03.jpg" style="resize:none; width: 225px; height: 100px"></textarea><br></article>
+<article><textarea id="come" onchange="auto_grow(this)" oninput="auto_grow(this)" placeholder="https://cdn.jsdelivr.net/gh/thun888/tuku/0a.jpg" style="resize:none; width: 225px; height: 100px"></textarea><br></article>
 </div>
 <script language="javascript">
  function down()
@@ -66,9 +107,8 @@
     </script>
 <input type="button" onclick="down()" value="下载(请合成后点击)"/>
 <!--不会有人看到吧，不会吧不会吧-->
-<h5>由<a href="https://www.jsdelivr.com/">jsdelivr</a>提供<a href="https://baike.baidu.com/item/CDN/420951">CDN</a>加速</h5>
-<style>
-    body{text-align:center}
-</style>
+</div>
+<div id="wb_Text1" style="position:absolute;left:433px;top:35px;width:250px;height:15px;z-index:6;">
+<span style="color:#000000;font-family:Arial;font-size:13px;"></span></div>
 </body>
 </html>
