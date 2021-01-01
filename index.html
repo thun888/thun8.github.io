@@ -193,6 +193,57 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2021/01/01/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/">搭建Teambition网盘的目录索引</a>
+
+      <a href="/2021/01/01/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/" class="index-excerpt">
+        
+        
+          
+        
+        <div>github链接：TeambitionShare
+准备
+Teambition账号
+
+一台云服务器/支持PHP的虚拟主机
+
+
+安装这里以宝塔面板为例
+先创建
+
+从github把源码下载后上传然后解压
+
+进到/TeambitionShare-master里把源码拉出来
+gif:
+然后配置伪静态（不设置会404）
+Nginx
+#根目录伪静态
+location / &#123;
+  if (!-e $re</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2021-01-01
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/web/">web</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
       <a class="index-header" href="/2020/12/25/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/">hexo更新pages出错应急方法</a>
 
       <a href="/2020/12/25/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/" class="index-excerpt">
@@ -572,58 +623,19 @@ https://www.bilibili.com/video/BV1CZ4y1M7pM
     </div>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <div class="col-12 col-md-12 mx-auto index-info">
-      <a class="index-header" href="/1999/11/29/%E6%9D%82%E7%89%A9/">杂物</a>
-
-      <a href="/1999/11/29/%E6%9D%82%E7%89%A9/" class="index-excerpt">
-        
-        
-          
-        
-        <div>81 空
-82
-
-83
-
-84 空
-85
-
-86
-
-87 空
-88 互赞
-89 空
-90 
-
-91
-
-92 空
-93 bbs
-
-94 互赞
-95 ？
-96 @#$@!%@#$!
-98
-
-af415e486f47d406(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"them</div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>&nbsp;1999-11-29
-          </div>
-        
-        
-        
-      </div>
-    </div>
-  </div>
 
 
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
 
